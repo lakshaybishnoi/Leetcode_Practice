@@ -7,7 +7,7 @@ public:
         for(int i =0;i<say.length();i++){
             char curr_char = say[i];
             int count = 1;
-            while(i<say.length()&& say[i]==say[i+1]){
+            while(i<say.length()&& say[i+1]==curr_char){
                 count++;
                 i++;
 
@@ -15,5 +15,5 @@ public:
             res  += to_string(count)+ curr_char;
         }
         
-    return res ;}
+    return res;}
 };
